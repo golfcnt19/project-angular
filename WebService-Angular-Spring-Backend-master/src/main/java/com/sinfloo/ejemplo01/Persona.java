@@ -15,6 +15,8 @@ public class Persona {
     private String name;
     @Column 
     private String apellidos;
+    @Column 
+    private String address;
 
     public int getId() {
         return id;
@@ -39,6 +41,12 @@ public class Persona {
     public void setApellidos(String apellidos) {
         this.apellidos = apellidos;
     }
-    
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
     
 }

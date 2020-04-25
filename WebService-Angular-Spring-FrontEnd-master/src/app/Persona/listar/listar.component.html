@@ -10,6 +10,7 @@
             <th>ID</th>
             <th>NOMBRES</th>
             <th>APELLIDOS</th>
+            <th>ADDRESS</th>
             <th>ACCIONES</th>
           </tr>
         </thead>
@@ -18,6 +19,7 @@
             <td>{{persona.id}}</td>
             <td>{{persona.name}}</td>
             <td>{{persona.apellidos}}</td>
+            <td>{{persona.address}}</td>
             <td>
               <button (click)="Editar(persona)" class="btn btn-warning">Editar</button>
               <button (click)="Delete(persona)" class="btn btn-danger" style="margin-left: 10px;">Delete</button>
