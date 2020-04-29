@@ -9,6 +9,10 @@ import { EditComponent } from './Persona/edit/edit.component';
 import{FormsModule}from '@angular/forms';
 import{ServiceService}from '../app/Service/service.service';
 import{HttpClientModule}from '@angular/common/http';
+import { AComponent } from './Product/a/a.component';
+import { EComponent } from './Product/e/e.component';
+import { LComponent } from './Product/l/l.component';
+
 
 
 @NgModule({
@@ -16,7 +20,12 @@ import{HttpClientModule}from '@angular/common/http';
     AppComponent,
     ListarComponent,
     AddComponent,
-    EditComponent
+    EditComponent,
+    AComponent,
+    EComponent,
+    LComponent,
+   
+  
    
   ],
   imports: [

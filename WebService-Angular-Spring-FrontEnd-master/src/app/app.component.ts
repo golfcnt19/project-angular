@@ -17,4 +17,11 @@ export class AppComponent {
   Nuevo(){
     this.router.navigate(["add"]);
   }
+  L(){
+    this.router.navigate(["L"]);
+  }
+  A(){
+    this.router.navigate(["A"]);
+  }
+
 }

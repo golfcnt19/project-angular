@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Persona } from '../Modelo/Persona';
-
+import { Product } from '../Modelo/Product';
 @Injectable()
 export class ServiceService {
 
@@ -9,7 +9,7 @@ export class ServiceService {
   constructor(private http:HttpClient) { }
 
   Url='http://localhost:8080/ejemplo01/personas';
-
+  Url2='http://localhost:8081/products';
   getPersonas(){
     return this.http.get<Persona[]>(this.Url);
   }
@@ -24,5 +24,21 @@ export class ServiceService {
   }
   deletePersona(persona:Persona){
     return this.http.delete<Persona>(this.Url+"/"+persona.id);
+  }
+
+  getProduct(){
+    return this.http.get<Product[]>(this.Url2);
+  }
+  deleteProduct(product:Product){
+    return this.http.delete<Persona>(this.Url2+"/"+product.id);
+  }
+  createProduct(product:Product){
+    return this.http.post<Product>(this.Url2,product);
+  }
+  getProductId(id:number){
+    return this.http.get<Product>(this.Url2+"/"+id);
+  }
+  updateProduct(product:Product){
+    return this.http.put<Product>(this.Url2+"/"+product.id,product);
   }
 }

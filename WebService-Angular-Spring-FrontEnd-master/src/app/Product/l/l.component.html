@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <h3>Personas</h3>
+    </div>
+    <div class="card-body">
+      <table class="table table-hover">
+        <thead>
+          <tr class="text-center">
+            <th>ID</th>
+            <th>NOMBRES</th>
+            <th>APELLIDOS</th>
+            <th>ADDRESS</th>
+            <th>ACCIONES</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of product" class="text-center">
+            <td>{{product.id}}</td>
+            <td>{{product.name}}</td>
+            <td>{{product.price}}</td>
+            <td>{{product.address}}</td>
+            <td>
+              <button (click)="Ed(product)" class="btn btn-warning">E</button>
+              <button (click)="D(product)" class="btn btn-danger" style="margin-left: 10px;">D</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
