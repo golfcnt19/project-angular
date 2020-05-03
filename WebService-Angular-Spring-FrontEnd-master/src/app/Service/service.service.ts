@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Persona } from '../Modelo/Persona';
 import { Product } from '../Modelo/Product';
+import { Customer } from '../Modelo/Customer';
+
 @Injectable()
 export class ServiceService {
 
@@ -10,6 +12,7 @@ export class ServiceService {
 
   Url='http://localhost:8080/ejemplo01/personas';
   Url2='http://localhost:8081/products';
+  Url3='http://localhost:8082/customer';
   getPersonas(){
     return this.http.get<Persona[]>(this.Url);
   }
@@ -41,4 +44,10 @@ export class ServiceService {
   updateProduct(product:Product){
     return this.http.put<Product>(this.Url2+"/"+product.id,product);
   }
+
+  getCustomer(){
+    return this.http.get<Customer[]>(this.Url3);
+  }
+
+
 }

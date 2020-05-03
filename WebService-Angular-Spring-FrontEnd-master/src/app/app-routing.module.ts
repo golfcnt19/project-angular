@@ -6,6 +6,9 @@ import { EditComponent } from './Persona/edit/edit.component';
 import { AComponent } from './Product/a/a.component';
 import { LComponent } from './Product/l/l.component';
 import { EComponent } from './Product/e/e.component';
+import { ListComponent } from './Customer/list/list.component';
+import { EditsComponent } from './Customer/edits/edits.component';
+import { AddsComponent } from './Customer/adds/adds.component';
 const routes: Routes = [
   {path:'listar', component:ListarComponent},
   {path:'add',component:AddComponent},
@@ -13,6 +16,9 @@ const routes: Routes = [
   {path:'A',component:AComponent},
   {path:'L',component:LComponent},
   {path:'E',component:EComponent},
+  {path: 'list' ,component: ListComponent},
+  {path: 'edits' ,component: EditsComponent},
+  {path: 'adds' ,component: AddsComponent},
 ];
 
 @NgModule({

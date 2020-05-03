@@ -12,6 +12,9 @@ import{HttpClientModule}from '@angular/common/http';
 import { AComponent } from './Product/a/a.component';
 import { EComponent } from './Product/e/e.component';
 import { LComponent } from './Product/l/l.component';
+import { ListComponent } from './Customer/list/list.component';
+import { EditsComponent } from './Customer/edits/edits.component';
+import { AddsComponent } from './Customer/adds/adds.component';
 
 
 
@@ -24,6 +27,9 @@ import { LComponent } from './Product/l/l.component';
     AComponent,
     EComponent,
     LComponent,
+    ListComponent,
+    EditsComponent,
+    AddsComponent,
    
   
    
