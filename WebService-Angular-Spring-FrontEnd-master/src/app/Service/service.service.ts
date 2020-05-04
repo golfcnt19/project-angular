@@ -49,5 +49,17 @@ export class ServiceService {
     return this.http.get<Customer[]>(this.Url3);
   }
 
+  deleteCustomer(customer:Customer){
+    return this.http.delete<Customer>(this.Url3+"/"+customer.id);
+  }
+  getCustomerId(id:number){
+    return this.http.get<Customer>(this.Url3+"/"+id);
+  }
+  updateCustomer(customer:Customer){
+    return this.http.put<Customer>(this.Url3+"/"+customer.id,customer);
+  }
+  createCustomer(customer:Customer){
+    return this.http.post<Customer>(this.Url3,customer);
+  }
 
 }

@@ -23,5 +23,11 @@ export class AppComponent {
   A(){
     this.router.navigate(["A"]);
   }
+  Lists(){
+    this.router.navigate(["lists"]);
+  }
+  Adds(){
+    this.router.navigate(["adds"]);
+  }
 
 }

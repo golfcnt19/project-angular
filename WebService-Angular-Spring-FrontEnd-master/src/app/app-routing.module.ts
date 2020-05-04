@@ -16,7 +16,7 @@ const routes: Routes = [
   {path:'A',component:AComponent},
   {path:'L',component:LComponent},
   {path:'E',component:EComponent},
-  {path: 'list' ,component: ListComponent},
+  {path: 'lists' ,component: ListComponent},
   {path: 'edits' ,component: EditsComponent},
   {path: 'adds' ,component: AddsComponent},
 ];

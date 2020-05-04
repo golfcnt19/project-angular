@@ -1,3 +1,32 @@
-<p>
-  edits works!
-</p>
+<div class="container col-md-6">
+  <div class="card">
+    <div class="card-header">
+      <h3>Modificar Datos</h3>
+    </div>
+    <div class="card-body">
+      <form action="">
+        <div class="form-group">
+          <label for="">Nombres:</label>
+          <input [(ngModel)]="customer.name" name="name" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="">Apellidos:</label>
+          <input [(ngModel)]="customer.email" name="email" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="">Address:</label>
+          <input [(ngModel)]="customer.countrycode" name="countrycode" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="">Address:</label>
+          <input [(ngModel)]="customer.budget" name="budget" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="">Address:</label>
+          <input [(ngModel)]="customer.used" name="used" type="text" class="form-control">
+        </div>
+        <button (click)="Actualizars(customer)" class="btn btn-danger">Actualizars</button>
+      </form>
+    </div>
+  </div>
+</div>
