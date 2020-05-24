@@ -29,5 +29,8 @@ export class AppComponent {
   Adds(){
     this.router.navigate(["adds"]);
   }
+  PList(){
+    this.router.navigate(["plist"]);
+  }
 
 }

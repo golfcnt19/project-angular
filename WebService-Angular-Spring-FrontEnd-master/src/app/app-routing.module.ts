@@ -9,6 +9,8 @@ import { EComponent } from './Product/e/e.component';
 import { ListComponent } from './Customer/list/list.component';
 import { EditsComponent } from './Customer/edits/edits.component';
 import { AddsComponent } from './Customer/adds/adds.component';
+import { ListdataComponent } from './pro/listdata/listdata.component';
+
 const routes: Routes = [
   {path:'listar', component:ListarComponent},
   {path:'add',component:AddComponent},
@@ -19,6 +21,7 @@ const routes: Routes = [
   {path: 'lists' ,component: ListComponent},
   {path: 'edits' ,component: EditsComponent},
   {path: 'adds' ,component: AddsComponent},
+  {path: 'plist' ,component: ListdataComponent},
 ];
 
 @NgModule({

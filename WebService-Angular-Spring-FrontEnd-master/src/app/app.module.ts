@@ -15,6 +15,9 @@ import { LComponent } from './Product/l/l.component';
 import { ListComponent } from './Customer/list/list.component';
 import { EditsComponent } from './Customer/edits/edits.component';
 import { AddsComponent } from './Customer/adds/adds.component';
+import { ListdataComponent } from './pro/listdata/listdata.component';
+import { AdddataComponent } from './pro/adddata/adddata.component';
+import { EditdataComponent } from './pro/editdata/editdata.component';
 
 
 
@@ -30,6 +33,9 @@ import { AddsComponent } from './Customer/adds/adds.component';
     ListComponent,
     EditsComponent,
     AddsComponent,
+    ListdataComponent,
+    AdddataComponent,
+    EditdataComponent,
    
   
    
